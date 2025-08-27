@@ -652,3 +652,79 @@ header .icons a:hover{
   }
 
 }
+
+/* Contact Section */
+.contact {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact .section-title h2 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact .section-title p {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+}
+
+.contact form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 40px auto 0;
+}
+
+.contact form .form-control {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.contact form .form-control:focus {
+  border-color: #EB4040;
+  box-shadow: 0 0 5px rgba(235, 64, 64, 0.3);
+  outline: none;
+}
+
+.contact form textarea.form-control {
+  resize: none;
+}
+
+.contact form button.btn {
+  background-color: #EB4040;
+  color: #fff;
+  font-weight: 500;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.contact form button.btn:hover {
+  background-color: #d73838;
+}
+
+.contact iframe {
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .contact form {
+    padding: 20px;
+  }
+}
