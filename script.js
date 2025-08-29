@@ -46,3 +46,40 @@ document.querySelectorAll('.featured-image-3').forEach(image_3 =>{
     document.querySelector('.big-image-3').src = src;
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll(".tab-link");
+  const panes = document.querySelectorAll(".tab-pane");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      // Retire active
+      tabs.forEach(t => t.classList.remove("active"));
+      panes.forEach(p => p.classList.remove("active"));
+
+      // Ajoute active au bon
+      tab.classList.add("active");
+      document.getElementById(tab.dataset.tab).classList.add("active");
+    });
+  });
+});
+
+// Gestion simple du formulaire
+const contactForm = document.getElementById('contactForm');
+
+contactForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const name = contactForm.name.value;
+  const email = contactForm.email.value;
+  const subject = contactForm.subject.value;
+  const message = contactForm.message.value;
+
+  // Ici tu peux envoyer les données via fetch/AJAX si nécessaire
+  alert(`Merci ${name} ! Votre message a été envoyé.`);
+  
+  // Reset form
+  contactForm.reset();
+});
+
